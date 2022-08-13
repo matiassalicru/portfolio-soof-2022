@@ -26,7 +26,6 @@ export const Home = () => {
 
   const scrollDown = () => {
     const pageHeight = window.innerHeight
-    console.log('🚀 ~ scrollDown ~ pageHeight', pageHeight)
     window.scrollTo({ top: pageHeight - 60, behavior: 'smooth' })
   }
 
