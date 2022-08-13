@@ -9,7 +9,5 @@ export default createGlobalStyle`
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
-  scroll-behavior: smooth;
-
   }
 `

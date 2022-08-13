@@ -7,13 +7,9 @@ export const SCHomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  scroll-behavior: smooth;
 `
 
 export const SCTopLeftRect = styled.div`
-  /* position: absolute; */
-  /* left: 10px; */
-  /* top: 20px; */
   width: 4px;
   height: 220px;
   background-color: ${({ theme }) => theme.color};
@@ -22,9 +18,6 @@ export const SCTopLeftRect = styled.div`
 export const SCTopLeftTitleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
-  /* left: 25px; */
-  /* top: 30px; */
 `
 
 export const SCTopLeftTitle = styled.p`
@@ -40,7 +33,6 @@ export const SCTopLeftTitle = styled.p`
 export const SCArrowContainer = styled.div`
   position: absolute;
   bottom: 30px;
-  scroll-behavior: smooth;
   font-size: 60px;
   transition: font-size 0.2s;
 

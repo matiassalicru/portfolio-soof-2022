@@ -3,9 +3,7 @@ import styled from 'styled-components'
 export const SCAboutContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
   height: fit-content;
-  scroll-behavior: smooth;
   margin: 0 100px;
 `
 
