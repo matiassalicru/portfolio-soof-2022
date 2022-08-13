@@ -1,10 +1,7 @@
 import { useContext } from 'react'
 
 // Context
-import {
-  ThemeContext,
-  ThemeProviderContext,
-} from './context/themeContext/Context'
+import { ThemeContext } from './context/themeContext/Context'
 
 // Styled-Components
 import { ThemeProvider } from 'styled-components'
@@ -47,28 +44,26 @@ function App() {
   }
 
   return (
-    <ThemeProviderContext>
-      <ThemeProvider theme={theme}>
-        <GlobalCSS />
-        <SCFixedButtons>
-          <SCThemeButton onClick={changeTheme} type='button' rightSpace='10px'>
-            <FontAwesomeIcon
-              icon={theme.theme === DARK ? faSun : faMoon}
-              size='xl'
-            />
-          </SCThemeButton>
-          <SCThemeButton type='button' rightSpace='60px' onClick={setNewLang}>
-            <SCLang>{i18n.language}</SCLang>
-            <FontAwesomeIcon icon={faGlobeAmericas} size='xl' />
-          </SCThemeButton>
-        </SCFixedButtons>
-        <Home />
-        <About />
-        <Skills />
-        <Experience />
-        <Contact />
-      </ThemeProvider>
-    </ThemeProviderContext>
+    <ThemeProvider theme={theme}>
+      <GlobalCSS />
+      <SCFixedButtons>
+        <SCThemeButton onClick={changeTheme} type='button' rightSpace='10px'>
+          <FontAwesomeIcon
+            icon={theme.theme === DARK ? faSun : faMoon}
+            size='xl'
+          />
+        </SCThemeButton>
+        <SCThemeButton type='button' rightSpace='60px' onClick={setNewLang}>
+          <SCLang>{i18n.language}</SCLang>
+          <FontAwesomeIcon icon={faGlobeAmericas} size='xl' />
+        </SCThemeButton>
+      </SCFixedButtons>
+      <Home />
+      <About />
+      <Skills />
+      <Experience />
+      <Contact />
+    </ThemeProvider>
   )
 }
 
