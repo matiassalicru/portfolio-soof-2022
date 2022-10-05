@@ -43,8 +43,8 @@ export const SCArrowContainer = styled.div`
 
 export const SCProfilePic = styled.div`
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-image: url('https://i.ibb.co/s2rKbmJ/IMG-1737.jpg');
   background-size: cover;
   background-position: center;
@@ -60,7 +60,7 @@ export const SCHomeTitle = styled.h1`
 
 export const SCHomeSubtitle = styled.h2`
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 5px;
 `
 

@@ -20,7 +20,6 @@ export const About = () => {
         <SCAboutText>{t('about:text')}</SCAboutText>
         <SCAboutProfile />
       </SCAboutContent>
-      <SCAboutText>{t('about:text')}</SCAboutText>
     </SCAboutContainer>
   )
 }

@@ -32,4 +32,14 @@ export const SCSkillsListItemContainer = styled.li`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  svg {
+    width: 0.3em;
+  }
+`
+
+export const SCListContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
