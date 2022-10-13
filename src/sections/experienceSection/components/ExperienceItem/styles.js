@@ -8,7 +8,7 @@ export const SCExpItemContainer = styled.div`
 `
 
 export const SCExpItemText = styled.p`
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 200;
 `
 

@@ -15,11 +15,11 @@ export const SCAboutContainer = styled.div`
 export const SCAboutContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   align-items: center;
   
   @media ${device.laptop} {
+    gap: 128px;
     flex-direction: row;
     align-items: center;
   }
@@ -30,6 +30,11 @@ export const SCAboutText = styled.p`
   place-content: center;
   font-size: 18px;
   margin-top: 30px;
+  max-width: 100%;
+  
+  @media ${device.laptop} {
+    max-width: 50%;
+  }
 `
 
 export const SCAboutProfile = styled.div`
@@ -50,6 +55,6 @@ export const SCAboutProfile = styled.div`
 
 export const SCAboutTitle = styled.h1`
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 24px;
   text-decoration: underline;
 `

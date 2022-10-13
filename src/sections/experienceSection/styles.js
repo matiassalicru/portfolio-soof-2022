@@ -15,7 +15,7 @@ export const SCExpContainer = styled.div`
 
 export const SCExpTitle = styled.div`
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 24px;
   text-decoration: underline;
 `
 
@@ -23,6 +23,7 @@ export const SCExpContent = styled.div`
   display: flex;
   max-width: 100%;
   flex-direction: column;
+  justify-content: center;
   
   @media ${device.tablet} { 
     flex-direction: row;

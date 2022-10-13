@@ -75,6 +75,7 @@ export const SCTitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 24px;
   @media ${device.laptop} {
     text-align: start;
   }

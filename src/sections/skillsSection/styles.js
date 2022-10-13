@@ -6,7 +6,6 @@ export const SCSkillsContainer = styled.div`
   flex-direction: column;
   height: fit-content;
   margin: 36px 36px 0 36px;
-  margin-top: 36px;
 
 
   @media ${device.laptop} {
@@ -16,7 +15,7 @@ export const SCSkillsContainer = styled.div`
 
 export const SCSkillsTitle = styled.h1`
   display: flex;
-  font-size: 2rem;
+  font-size: 24px;
   text-decoration: underline;
   font-weight: 400;
 `
@@ -37,7 +36,7 @@ export const SCSkillsList = styled.ul`
 export const SCSkillsListItem = styled.p`
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 18px;
 `
 
 export const SCSkillsListItemContainer = styled.li`
@@ -57,6 +56,7 @@ export const SCListContainer = styled.div`
   flex-direction: column;
 
   @media ${device.laptop} {
+    gap: 128px;
     flex-direction: row;
   }
 `

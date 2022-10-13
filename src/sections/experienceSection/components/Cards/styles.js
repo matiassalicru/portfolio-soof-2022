@@ -16,9 +16,10 @@ export const SCCardContainer = styled.div`
   cursor: pointer;
   transition: box-shadow 0.2s;
   gap: 20px;
-  max-width: auto;
-
-  @media ${device.laptop} {
+  width: auto;
+  
+  @media ${device.tablet} {
+    width: 500px;
     margin: 0 50px;
   }
 
@@ -28,14 +29,14 @@ export const SCCardContainer = styled.div`
 `
 
 export const SCExpItemText = styled.p`
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 200;
   min-height: 100px;
   height: 100%;
 `
 
 export const SCCardTitle = styled.h3`
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 400;
   margin: 0;
   text-align: center;
