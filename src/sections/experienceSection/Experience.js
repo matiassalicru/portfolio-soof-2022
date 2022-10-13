@@ -1,7 +1,7 @@
 // Translations
 import { useTranslation } from 'react-i18next'
-import { ExperienceItem } from './components/ExperienceItem/ExperienceItem'
-
+// import { ExperienceItem } from './components/ExperienceItem/ExperienceItem'
+import { Card } from './components/Cards/index'
 // Styled-components
 import {
   SCExpContainer,
@@ -15,8 +15,8 @@ export const Experience = () => {
   const { t } = useTranslation('exp')
 
   const EXPERIENCES = [
-    { id: 1, image_URL: 'https://i.ibb.co/VYqfgCJ/Elstreamyacomienza.gif' },
-    { id: 2, image_URL: 'https://i.ibb.co/THwY44n/IMG-3325.png' },
+    { id: 1, title: 'Streming Designs', image_URL: 'https://i.ibb.co/CQLs7PV/travel-app.jpg' },
+    { id: 2, title: 'Personal Projects', image_URL: 'https://i.ibb.co/CQLs7PV/travel-app.jpg' },
   ]
 
   return (
@@ -24,7 +24,7 @@ export const Experience = () => {
       <SCExpTitle>{t('exp:title')}</SCExpTitle>
       <SCExpContent>
         {EXPERIENCES.map((exp) => (
-          <ExperienceItem exp={exp} key={exp.id} />
+          <Card exp={exp} key={exp.id} />
         ))}
       </SCExpContent>
     </SCExpContainer>

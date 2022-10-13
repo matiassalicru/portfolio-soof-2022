@@ -35,9 +35,6 @@ export const Skills = () => {
     loop: true,
     autoplay: true,
     animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
   }
 
   return (
@@ -52,7 +49,13 @@ export const Skills = () => {
             </SCSkillsListItemContainer>
           ))}
         </SCSkillsList>
-        <Lottie options={defaultOptions} height={'auto'} width={500} style={{margin: '0 100px'}} />
+        <Lottie
+          isClickToPauseDisabled
+          options={defaultOptions}
+          height={'auto'}
+          width={'auto'}
+          style={{ margin: '0 100px', maxWidth: '500px', minWidth: '200px' }}
+        />
       </SCListContainer>
     </SCSkillsContainer>
   )

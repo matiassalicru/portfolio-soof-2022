@@ -4,7 +4,7 @@ export const SCContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin: 100px;
+  margin: 100px 36px;
 `
 
 export const SCContactTitle = styled.h1`
@@ -28,6 +28,7 @@ export const SCContactItem = styled.a`
   margin: 0;
   padding: 0;
   transition: filter 0.2s, transform 0.2s;
+  font-size: 24px;
 
   &:hover {
     filter: drop-shadow(1px 1px 2px ${({ theme }) => theme.color});
@@ -39,4 +40,8 @@ export const SCContactItemContainer = styled.li`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  svg {
+    width: 0.3em;
+  }
 `

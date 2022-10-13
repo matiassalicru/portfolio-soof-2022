@@ -1,19 +1,31 @@
 import styled from 'styled-components'
+import { device } from '../../constants'
 
 export const SCAboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin: 0 100px;
+  margin: 0 48px;
+  
+  @media ${device.laptop} {
+    margin: 0 100px;
+  }
 `
 
 export const SCAboutContent = styled.div`
   display: flex;
-  place-content: center;
+  flex-direction: column;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+  @media ${device.laptop} {
+    flex-direction: row;
+    align-items: center;
+  }
 `
 
-export const SCAboutText = styled.div`
+export const SCAboutText = styled.p`
   display: flex;
   place-content: center;
   font-size: 18px;
@@ -29,6 +41,11 @@ export const SCAboutProfile = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0px 0px 1px ${({ theme }) => theme.color};
+  max-width: 500px;
+
+  @media ${device.laptop} {
+    max-width: auto;
+  }
 `
 
 export const SCAboutTitle = styled.h1`

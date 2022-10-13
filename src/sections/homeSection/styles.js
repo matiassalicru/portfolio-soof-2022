@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../constants'
 
 export const SCHomeContainer = styled.div`
   display: flex;
@@ -7,6 +8,11 @@ export const SCHomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-direction: column;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `
 
 export const SCTopLeftRect = styled.div`
@@ -35,6 +41,7 @@ export const SCArrowContainer = styled.div`
   bottom: 30px;
   font-size: 60px;
   transition: font-size 0.2s;
+  filter: drop-shadow(0px 0px 15px ${({ theme }) => theme.neon});
 
   &:hover {
     font-size: 65px;
@@ -49,7 +56,7 @@ export const SCProfilePic = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 2px ${({ theme }) => theme.color};
+  box-shadow: 0px 1px 5px 5px ${({ theme }) => theme.neon};
 `
 
 export const SCHomeTitle = styled.h1`
@@ -67,6 +74,10 @@ export const SCHomeSubtitle = styled.h2`
 export const SCTitleContainer = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
+  @media ${device.laptop} {
+    text-align: start;
+  }
 `
 
 export const SCTopLeftContent = styled.div`
