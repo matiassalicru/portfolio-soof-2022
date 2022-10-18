@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { device } from '../../../../constants'
 
 export const SCCardContainer = styled.div`
+  text-decoration: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -57,8 +58,8 @@ export const SCCardImg = styled.img`
 `
 
 export const SCCardImgContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  .swiper-slide-active{
+    display: flex;
+    justify-content: center;
+  }
 `

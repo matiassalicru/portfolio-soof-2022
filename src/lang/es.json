@@ -12,7 +12,8 @@
     "title": "Habilidades",
     "figma": "Figma",
     "procreate": "ProCreate",
-    "video_editing": "Edición de video",
+    "design_systems": "Design Systems",
+    "adobe": "Adobe",
     "code": "HTML y CSS",
     "communication": "Comunicación efectiva",
     "g_suite": "G-Suite"
@@ -20,8 +21,8 @@
   "exp": {
     "title": "Experiencia",
     "not_found": "Exp no encontrada",
-    "text_1": "Algunos de mis mejores diseños que hice utilizando <bold>Procreate</bold> para algunos streamers de Twitch, trabajé con clientes de todo el mundo.",
-    "text_2": "Design System completo de una aplicación creada por mí utilizando <bold>Figma</bold> y algunos diseños propios."
+    "text_2": "Algunos de mis mejores diseños que hice utilizando <bold>Procreate</bold> para algunos streamers de Twitch, trabajé con clientes de todo el mundo.",
+    "text_1": "Design System completo de una aplicación creada por mí utilizando <bold>Figma</bold> para el prototipado y el diseño."
   },
   "contact": {
     "title": "Contáctame",

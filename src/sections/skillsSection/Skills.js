@@ -25,7 +25,8 @@ export const Skills = () => {
   const SKILLS = [
     'figma',
     'procreate',
-    'video_editing',
+    'design_systems',
+    'adobe',
     'code',
     'communication',
     'g_suite',
