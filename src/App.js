@@ -1,20 +1,20 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 
 // Context
 import { ThemeContext } from './context/themeContext/Context'
 
 // Styled-Components
 import { ThemeProvider } from 'styled-components'
-import { SCThemeButton, SCLang, SCFixedButtons } from './styles'
+import { SCThemeButton, SCLang, SCFixedButtons, SCIcon } from './styles'
 import GlobalCSS from './global.css'
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faSun,
-  faMoon,
   faGlobeAmericas,
 } from '@fortawesome/free-solid-svg-icons'
+import faMoon from './lotties/moon-outline.svg'
+import faSun from './lotties/sunny-outline.svg'
 
 // Constants
 import { DARK } from './context/themeContext/constants'
@@ -39,6 +39,12 @@ function App() {
 
   const { theme, changeTheme } = useContext(ThemeContext)
 
+  useEffect(() => {
+    if (i18n.language !== (ESP_LANG || ENG_LANG)) {
+      i18n.changeLanguage(ENG_LANG)
+    }
+  }, [i18n])
+
   const setNewLang = () => {
     i18n.changeLanguage(i18n.language === ENG_LANG ? ESP_LANG : ENG_LANG)
   }
@@ -48,10 +54,7 @@ function App() {
       <GlobalCSS />
       <SCFixedButtons>
         <SCThemeButton onClick={changeTheme} type='button' rightSpace='10px'>
-          <FontAwesomeIcon
-            icon={theme.theme === DARK ? faSun : faMoon}
-            size='xl'
-          />
+          <SCIcon src={theme.theme === DARK ? faSun : faMoon} />
         </SCThemeButton>
         <SCThemeButton type='button' rightSpace='60px' onClick={setNewLang}>
           <SCLang>{i18n.language}</SCLang>

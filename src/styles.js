@@ -34,3 +34,7 @@ export const SCFixedButtons = styled.div`
   width: fit-content;
   gap: 15px;
 `
+
+export const SCIcon = styled.img`
+  width: 30px;
+`

@@ -20,7 +20,6 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'es',
     resources: {
       // have a common namespace used around the full app
       ns: ['translations'],
