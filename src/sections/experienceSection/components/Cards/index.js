@@ -43,11 +43,9 @@ export const Card = ({ exp }) => {
               '--swiper-navigation-size': '25px',
             }}
             pagination={{ clickable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log('slide change')}
             >
-            {images_URL.map((image_URL) => (
-              <SwiperSlide>
+            {images_URL.map((image_URL, index) => (
+              <SwiperSlide key={index}>
                 <SCCardImg src={image_URL} alt='project image' />
               </SwiperSlide>
             ))}

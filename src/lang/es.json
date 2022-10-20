@@ -31,5 +31,8 @@
     "email": "Email",
     "twitter": "Twitter",
     "behance": "Behance"
+  },
+  "footer": {
+    "main_text": "Diseñado por Sofía Dolcemáscolo y desarrollado por <0>Matías Salicrú</0>"
   }
 }

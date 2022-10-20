@@ -33,6 +33,7 @@ import { About } from './sections/aboutSection/About'
 import { Skills } from './sections/skillsSection/Skills'
 import { Experience } from './sections/experienceSection/Experience'
 import { Contact } from './sections/contactSection/Contact'
+import { Footer } from './sections/footerSection/Footer'
 
 function App() {
   const { i18n } = useTranslation()
@@ -66,6 +67,7 @@ function App() {
       <Skills />
       <Experience />
       <Contact />
+      <Footer />
     </ThemeProvider>
   )
 }

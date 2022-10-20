@@ -61,14 +61,22 @@ export const SCProfilePic = styled.div`
 
 export const SCHomeTitle = styled.h1`
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 32px;
   margin: 10px 0;
+
+  @media ${device.tablet} {
+    font-size: 32px;
+  }
 `
 
 export const SCHomeSubtitle = styled.h2`
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 24px;
   margin: 5px;
+
+  @media ${device.tablet} {
+    font-size: 32px;
+  }
 `
 
 export const SCTitleContainer = styled.div`
