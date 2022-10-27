@@ -29,8 +29,12 @@ export const Experience = () => {
     {
       id: 2,
       title: 'Streming Designs',
-      images_URL: ['https://i.ibb.co/CQLs7PV/travel-app.jpg'],
-      link: '',
+      images_URL: [
+        'https://i.ibb.co/sKmTM88/Frame-3.jpg',
+        'https://i.ibb.co/d0Lng6p/Frame-1.jpg',
+        'https://i.ibb.co/KhgFPqY/Frame-2.jpg',
+      ],
+      link: 'https://www.instagram.com/soof.drawie/?igshid=MDE2OWE1N2Q%3D',
     },
   ]
 

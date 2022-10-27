@@ -52,7 +52,9 @@ export const SCProfilePic = styled.div`
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  background-image: url('https://i.ibb.co/s2rKbmJ/IMG-1737.jpg');
+  /* background-image: url('https://i.ibb.co/s2rKbmJ/IMG-1737.jpg'); */
+  background-image: url('https://i.ibb.co/Pjz6Gnd/Whats-App-Image-2022-10-24-at-14-59-58-1.jpg');
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -42,9 +42,14 @@ export const SCAboutProfile = styled.div`
   min-width: 300px;
   min-height: 300px;
   background-image: url('https://i.ibb.co/2hcTbs7/IMG-4180.jpg');
+  /* background-image: url('https://i.ibb.co/zGH5pZT/Whats-App-Image-2022-10-24-at-14-59-58.jpg'); */
+  /* background-image: url('https://i.ibb.co/Pjz6Gnd/Whats-App-Image-2022-10-24-at-14-59-58-1.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* transform: scaleX(-1); */
+  filter: FlipH;
+
   box-shadow: 0px 0px 1px ${({ theme }) => theme.color};
   max-width: 500px;
 
