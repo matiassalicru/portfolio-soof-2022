@@ -53,11 +53,13 @@ export const SCProfilePic = styled.div`
   width: 250px;
   height: 250px;
   /* background-image: url('https://i.ibb.co/s2rKbmJ/IMG-1737.jpg'); */
-  background-image: url('https://i.ibb.co/b2sDrG3/IMG-1761.jpg');
+  /* background-image: url('https://i.ibb.co/b2sDrG3/IMG-1761.jpg'); */
   /* background-image: url('https://i.ibb.co/Pjz6Gnd/Whats-App-Image-2022-10-24-at-14-59-58-1.jpg'); */
+  background-image: url('https://i.ibb.co/qjdt856/perfil2-1.jpg');
 
-  background-size: cover;
+  background-size: 150%;
   background-position: center;
+  background-position-y: 0%;
   background-repeat: no-repeat;
   box-shadow: 0px 1px 5px 5px ${({ theme }) => theme.neon};
 `
